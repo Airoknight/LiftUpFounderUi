@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f5f5f5;
+  --foreground: #1a1a1a;
+  --green-primary: #14532d;
+  --gold: #b45309;
+  --border: #e5e7eb;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Green-to-gold brand bar at very top */
+.rainbow-bar {
+  height: 3px;
+  width: 100%;
+  background: linear-gradient(to right,
+      #14532d 0%,
+      #16a34a 35%,
+      #d97706 65%,
+      #b45309 100%);
+  flex-shrink: 0;
+}
+
+/* Gold text accent — for small caps labels */
+.gold-text {
+  color: #b45309;
+}
+
+/* Green gradient text */
+.green-text {
+  color: #14532d;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #14532d !important;
+  box-shadow: 0 0 0 1px #14532d;
+}
